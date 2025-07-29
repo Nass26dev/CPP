@@ -6,7 +6,7 @@
 /*   By: nyousfi <nyousfi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/29 10:56:20 by nyousfi           #+#    #+#             */
-/*   Updated: 2025/07/29 15:41:13 by nyousfi          ###   ########.fr       */
+/*   Updated: 2025/07/29 17:48:10 by nyousfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void PhoneBook::displayContacts() const {
 void PhoneBook::displayContactDetail(int index) const {
     if (!isValidIndex(index)) {
         std::cout << "Invalid index." << std::endl;
-        return;
+        return ;
     }
     const Contact& c = contacts[index];
     std::cout << "First Name: " << c.getFirstName() << std::endl;

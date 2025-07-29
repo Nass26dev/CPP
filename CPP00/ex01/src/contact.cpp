@@ -6,7 +6,7 @@
 /*   By: nyousfi <nyousfi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/29 15:29:16 by nyousfi           #+#    #+#             */
-/*   Updated: 2025/07/29 15:29:50 by nyousfi          ###   ########.fr       */
+/*   Updated: 2025/07/29 17:48:22 by nyousfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,5 @@ std::string Contact::getPhoneNumber() const { return phoneNumber; }
 std::string Contact::getDarkestSecret() const { return darkestSecret; }
 
 bool Contact::isEmpty() const {
-    // On considère que si le prénom est vide, le contact n'existe pas
-    return firstName.empty();
+    return (firstName.empty());
 }

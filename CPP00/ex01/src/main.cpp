@@ -6,7 +6,7 @@
 /*   By: nyousfi <nyousfi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/29 10:41:02 by nyousfi           #+#    #+#             */
-/*   Updated: 2025/07/29 15:35:15 by nyousfi          ###   ########.fr       */
+/*   Updated: 2025/07/29 17:48:03 by nyousfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ Contact promptNewContact() {
     std::getline(std::cin, input);
     c.setDarkestSecret(input);
 
-    return c;
+    return (c);
 }
 
 int main() {
@@ -60,7 +60,7 @@ int main() {
             std::stringstream ss(indexStr);
             int idx;
             if (!(ss >> idx) || !pb.isValidIndex(idx)) {
-                std::cout << "Index invalide !" << std::endl;
+                std::cout << "Invalid index !" << std::endl;
             } else {
                 pb.displayContactDetail(idx);
             }
@@ -68,9 +68,8 @@ int main() {
         else if (cmd == "EXIT") {
             break;
         }
-        // Les autres commandes sont ignorées
     }
     std::cout << "Bye !" << std::endl;
-    return 0;
+    return (0);
 }
 
